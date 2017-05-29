@@ -1,0 +1,261 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_WVFB                ICON    DISCARDABLE     "VMWARE.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIG DIALOG DISCARDABLE  0, 0, 220, 142
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "wvfb Configure"
+FONT 10, "Microsoft Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,29,206,78,WS_DISABLED
+    CONTROL         "Use the inlined configure info",IDC_RD_INTERCONFIG,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,15,
+                    15,97,10
+    COMBOBOX        IDC_CM_CONFIG,117,14,76,50,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Custom",IDC_RD_CUSTCOFIG,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,15,28,44,12
+    COMBOBOX        IDC_CM_DEPTH,137,46,48,48,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_ED_MGRIGHT,45,78,39,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_ED_MGBOTTOM,136,78,39,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "Save as Default",IDC_DEFAULT,18,121,56,14
+    DEFPUSHBUTTON   "OK",IDOK,84,121,46,14
+    PUSHBUTTON      "Cancel",IDCANCEL,150,121,46,14
+    LTEXT           "Color Depth",IDC_STATIC,92,46,41,10
+    GROUPBOX        "MiniGUI Resolution ",IDC_STATIC,16,62,187,37
+    LTEXT           "Height:",IDC_STATIC,111,78,23,11
+    LTEXT           "Width:",IDC_STATIC,25,78,19,11
+    LTEXT           "Pixel",IDC_STATIC,88,80,19,8
+    LTEXT           "Pixel",IDC_STATIC,178,80,19,8
+END
+
+IDD_REFRATE DIALOGEX 0, 0, 154, 73
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "wvfb Frame Refresh Rate"
+FONT 10, "Microsoft Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,140,59
+    CONTROL         "Trackbar Control",ID_TRACKBAR,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,21,25,92,19,WS_EX_TRANSPARENT
+    DEFPUSHBUTTON   "OK",IDOK,21,49,35,13
+    PUSHBUTTON      "Cancel",IDCANCEL,90,49,35,13
+    LTEXT           "Target frame rate:",IDC_STATIC,14,7,59,10
+    RTEXT           "0fps",IDC_ST_FPS,116,27,27,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_REFRATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  22, 17, 212, 56
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "System"
+BEGIN
+    ICON            IDI_WVFB,IDC_MYICON,14,9,20,20
+    LTEXT           "wvfb Version 1.0",IDC_STATIC,49,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007 Feynman Software",IDC_STATIC,49,20,
+                    136,8
+    DEFPUSHBUTTON   "OK",IDOK,100,36,30,11,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_WVFB MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Load configure file\tCtrl+L", IDM_LOADCONFIG
+        MENUITEM "&Take a snapshot\tCtrl+P",    IDM_SAVEAS
+        MENUITEM "E&xit\tCtrl+Q",               IDM_EXIT
+    END
+    POPUP "&Setting"
+    BEGIN
+        MENUITEM "&Zoom Scale 1",               IDM_ZOOM1
+        MENUITEM "Zoom &Scale 2",               IDM_ZOOM2
+        MENUITEM SEPARATOR
+        MENUITEM "&Reset\tF6",                  IDC_RESETWVFB
+        MENUITEM SEPARATOR
+        MENUITEM "&Profile\tCtrl+F3",           IDM_CONFIGURE
+        MENUITEM "&Refresh rate\tCtrl+H",       IDM_REFREASHRATE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_WVFB ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "/",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    "1",            IDM_ZOOM1,              VIRTKEY, ALT, NOINVERT
+    "2",            IDM_ZOOM2,              VIRTKEY, ALT, NOINVERT
+    "H",            IDM_SHOWMOUSE,          VIRTKEY, CONTROL, NOINVERT
+    "L",            IDM_LOADCONFIG,         VIRTKEY, CONTROL, NOINVERT
+    "Q",            IDM_EXIT,               VIRTKEY, CONTROL, NOINVERT
+    "P",            IDM_SAVEAS,             VIRTKEY, CONTROL, NOINVERT
+    VK_F2,          IDM_CONFIGURE,          VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          IDC_RESETWVFB,          VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "wvfb"
+    IDS_HELLO               "Hello World!"
+    IDC_WVFB                "WVFB"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_RESETWVFB           "Reset Wvfb"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
